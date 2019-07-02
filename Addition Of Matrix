@@ -1,0 +1,70 @@
+#include<iostream.h>
+#include<conio.h>
+
+class Demo
+{
+    public:
+    int mat1[20][20],mat2[20][20],sum[20][20],i,j,l1,l2,c1,c2;
+
+    void accept1()
+    {
+        cout<<"Enter number of rows";
+        cin>>r1>>r2;
+
+        cout<<"Enter number of columns";
+        cin>>c1>>c2;
+
+        void display()
+        {
+            for(i=1;i<=l1;i++)
+            {
+                for(j=1;j<=c1;j++)
+                {
+                    cin>>mat1[i][j];
+                }
+            }
+
+            for(i=1;i<=l1;i++)
+            {
+                for(j=1;j<=c1;j++)
+                {
+                    cout<<mat1[i][j];
+                    cout<<"\n";
+                }
+            }
+        }
+
+            void display2()
+            {
+                for(i=1;i<=l2;i++)
+                {
+                    for(j=1;j<=c2;j++)
+                    {
+                        cout<<mat2[i][j];
+                        cout<<"\t";
+                    }
+                    cout<<"\n";
+                }
+            }
+
+            void display3()
+            {
+                for(i=1;i<=r1;i++)
+                {
+                    for(j=1;j<=c1;j++)
+                    {
+                        sum[i][j]=mat[i][j]+mat2[i][j];
+                    }
+                }
+                for(i=1;i<=r2;i++)
+                {
+                    for(j=1;j<=c1;j++)
+                    {
+                        cout<<sum[i][j];
+                        cout<<"\t";
+                    }
+                    cout<<"\n";
+                }
+            }
+    }
+};
